@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 const Navbar = () => {
+	// data
 	const nav = [
 		{
 			name: "About",
@@ -24,10 +25,12 @@ const Navbar = () => {
 		<>
 			<div className="flex justify-between mx-4 my-1">
 				<div className="flex space-x-10">
+					{/* logo */}
 					<a href="#">
 						<img className="w-20 h-10" src="/logo.png" alt="Logo" />
 					</a>
 					<div className="my-3 h-8 border-r-2 border-orange-500"></div>
+					{/* links */}
 					{nav.map((value, idx) => {
 						return (
 							<div
@@ -39,6 +42,7 @@ const Navbar = () => {
 						);
 					})}
 				</div>
+				{/* buttons */}
 				<div className="my-2 space-x-3">
 					<Button name="Login" num="1" link="#"/>
 					<Button name="Sign up" link="#" />
