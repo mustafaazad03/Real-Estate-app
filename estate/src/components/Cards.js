@@ -4,7 +4,7 @@ const Cards = ({pic,price,name,address,beds,bathroom,area}) => {
   return (
     <>
         {/*Product Card Container */}
-        <div class="flex flex-col">
+        <div class="flex flex-col shadow">
             {/*  Product Card  */}
             <div class="flex flex-col shadow-md cursor-pointer w-72 hover:-translate-y-1 duration-300">
                 {/*  Preview  */}
